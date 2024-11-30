@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .cardd{
+            width: 600px;
+            margin: 180px auto;
+            border: 1px solid #777;
+            border-radius:8px;
+            padding: 10px;
+            background-color: #fff;
+
+        }
+        .affiche{
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body id="body">
+    <div class="row cardd ">
+            <h2>Convertisseur HEXA-RGB </h2>
+            <div class="col my-3">
+            <input class="form-control" type="text" id="hexa" value="#" >
+            </div> 
+            <div class="row my-3 mx-1">
+            <button type="button" class="btn btn-primary btn-lg" onclick="get()">Convertir</button>
+            </div>
+            <div class="col my-3">
+            <input class="form-control" type="text" id="red" readonly >
+            </div>
+            <div class="col my-3">
+                <input class="form-control" type="text" id="green" readonly >
+            </div>
+            <div class="col my-3">
+                <input class="form-control" type="text" id="blue" readonly >
+            </div>
+            <div class="alert alert-warning affiche my-4" role="alert" id="alertt" >
+                saisir une valeur entre 0/9 et A/F  !
+            </div>
+    </div>
+
+
+
+    
+
+
+
+    <script src="bootstrap.js"></script>
+    <script src="./hexa.js"></script>
+</body>
+</html>
